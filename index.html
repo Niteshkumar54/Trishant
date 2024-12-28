@@ -56,10 +56,10 @@
             animation: textGlow 0.8s ease-in-out infinite;
         }
         .place {
-            font-size: 0.8em; /* Smaller text for Place */
+            font-size: 0.8em;
         }
         .best-friend {
-            font-size: 0.8em; /* Smaller text for Best Friend */
+            font-size: 0.8em;
         }
         .section ul {
             list-style-type: none;
@@ -95,12 +95,52 @@
         }
         img {
             border-radius: 50%;
-            width: 100px; /* Smaller size for the profile picture */
-            height: 100px; /* Smaller size for the profile picture */
+            width: 100px;
+            height: 100px;
             margin-bottom: 15px;
             animation: fadeIn 1s ease-in-out;
         }
-        /* Animation Keyframes */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .social-box {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff9900, #ff3333);
+            padding: 8px 15px;
+            border-radius: 20px;
+            text-align: center;
+            width: 160px;
+            height: 60px;
+            transition: transform 0.3s ease;
+        }
+        .social-box a {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            text-shadow: 0 0 10px silver;
+            animation: textGlow 0.8s ease-in-out infinite;
+        }
+        .social-box:hover {
+            transform: scale(1.1);
+        }
+        .social-box .icon {
+            width: 30px;
+            height: 30px;
+            margin-bottom: 5px;
+        }
+        .footer {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-size: 1em;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 0 0 10px silver;
+            animation: textGlow 0.8s ease-in-out infinite;
+        }
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
@@ -120,10 +160,8 @@
     </video>
 
     <div class="container">
-        <div class="title">Trishant Studio Symphony </div>
-
+        <div class="title">Trishant Studio Symphony</div>
         <img src="https://i.imgur.com/rDcttM7.jpeg" alt="Profile Photo" />
-        
         <h1><a href="https://t.me/TRISHANT13">TRISHANT</a></h1>
 
         <div class="inline-details">
@@ -136,25 +174,28 @@
             <h2>𝗦𝗞𝗜𝗜𝗜𝗦 𝗔𝗡𝗗 𝗘𝗫𝗣𝗘𝗥𝗧</h2>
             <ul>
                 <li>Piano Master</li>
-                <li>Professional Keyboard Player</li> <!-- Added Skill -->
+                <li>Professional Keyboard Player</li>
                 <li>ᴇᴛᴄ</li>
             </ul>
         </div>
 
         <div class="social-links">
-            <!-- Instagram Link -->
-            <a href="https://www.instagram.com/bhardwaj13.10?igsh=czl4Z2RwY25jYjE3" class="instagram" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="icon">
-                Instagram
-            </a>
-            
-            <!-- YouTube Link -->
-            <a href="https://www.youtube.com/@TRISHANTBHARDWAJ-ef8lo" class="youtube" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" class="icon">
-                YouTube
-            </a>
+            <div class="social-box">
+                <a href="https://www.instagram.com/bhardwaj13.10?igsh=czl4Z2RwY25jYjE3" class="instagram" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram" class="icon">
+                    Instagram
+                </a>
+            </div>
+            <div class="social-box">
+                <a href="https://www.youtube.com/@TRISHANTBHARDWAJ-ef8lo" class="youtube" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" class="icon">
+                    YouTube
+                </a>
+            </div>
         </div>
         <img src="https://imgur.com/VeOHEcT.png" alt="Jay Shree Ram">
     </div>
+
+    <div class="footer">MADE BY NITESH</div>
 </body>
 </html>
